@@ -208,21 +208,21 @@ header {
 
 @media (max-width: 768px) {
     .flex-container {
-        flex-direction: column; /* Mudar para coluna quando a largura for menor que 768px */
+        flex-direction: column; 
     }
 
     #image-group {
-        width: 100%; /* Ocupar a largura total */
+        width: 100%;
         order: 2;
     }
 
     #image-group img {
-        width: calc(50% - 0.5rem); /* Ajustar tamanho das imagens para ocupar 25% com espaço */
-        margin-bottom: 1rem; /* Espaçamento entre imagens */
+        width: calc(50% - 0.5rem);
+        margin-bottom: 1rem; 
     }
 
     .text-container {
-        max-width: 100%; /* Ocupar a largura total */
+        max-width: 100%;
     }
 }
 
@@ -238,3 +238,55 @@ header {
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
+
+/* VISITE NOS */
+
+#visitenos {
+    background: url("images/confeitaria.webp") center no-repeat;
+    background-size: 100% auto;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+/* INFORMACOES */
+
+#informacoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.horario, .localizacao, .contactos {
+    flex: 1 1 200px; 
+    margin-bottom: 20px; 
+    padding: 20px;
+    text-align: center;
+}
+
+.localizacao a {
+    color: black;
+}
+
+.horario p, .localizacao p, .contactos p {
+    line-height: 1.5; 
+    white-space: nowrap; 
+}
+
+@media (max-width: 768px) {
+    #informacoes {
+        flex-direction: column; 
+    }
+
+    .horario, .localizacao, .contactos {
+        flex: 1 1 auto; 
+        margin-bottom: 10px;
+    }
+}
+
+
+
