@@ -64,10 +64,17 @@ header {
     justify-content: space-between;
     padding: 3rem;
     margin-top: 4rem;
+    flex-wrap: wrap;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .text-content-story {
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
 }
 
 .global-headline {
@@ -75,25 +82,51 @@ header {
     margin-bottom: 1rem;
 }
 
-.story-img {
-    max-width: 50%;
-    height: auto;
-}
-
 .headline1 {
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Herr Von Muellerhoff', cursive;
     color: #e0a547;
     letter-spacing: .1rem;
+    margin-bottom: -1.5rem;
 }
 
 .headline2 {
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     color: black;
     text-transform: uppercase;
     letter-spacing: .1rem;
+}
+
+.text-content-story p {
+    margin-top: -1rem; 
+    margin-bottom: 0.5rem; 
+}
+
+.text-content-story a {
+    margin-bottom: 3rem; 
+    color: #e0a547;
+}
+
+.story-img {
+    max-width: 50%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 800px) {
+    #story {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .text-content-story,
+    .story-img {
+        max-width: 100%;
+    }
 }
 
 
