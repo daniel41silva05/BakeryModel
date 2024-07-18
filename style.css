@@ -46,6 +46,11 @@ header {
     text-decoration: none;
 }
 
+.nav-link:hover {
+    color: #e0a547;
+    text-decoration: none;
+}
+
 /* START */
 
 #start {
@@ -88,7 +93,7 @@ header {
 
 .headline1 {
     font-size: 30px;
-    font-family: 'Herr Von Muellerhoff', cursive;
+    font-family: 'Copperplate', sans-serif;
     color: #e0a547;
     letter-spacing: .1rem;
     margin-bottom: -1.5rem;
@@ -111,6 +116,12 @@ header {
 .text-content a {
     margin-bottom: 3rem; 
     color: #e0a547;
+}
+
+.text-content a:hover {
+    margin-bottom: 3rem; 
+    color: #e0a547;
+    font-weight: bold;
 }
 
 .story-img {
@@ -136,34 +147,58 @@ header {
 /* FRESCO */
 
 #fresco {
-    background: url("images/fresco.webp") center no-repeat;
-    background-size: 100% auto;
+    position: relative;
     min-height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    overflow: hidden;
 }
 
+#fresco::before {
+    content: "";
+    background: url("images/fresco.webp") center no-repeat;
+    background-size: 100% auto;
+    opacity: 0.9; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
 
 .global-headline-transicao h2 {
     color: white;
     text-align: center;
-    font-size: 50px;
-    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 55px;
+    font-family: 'Copperplate', sans-serif;
     letter-spacing: .1rem;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        2px 2px 5px rgb(0, 0, 0); 
 }
 
 .global-headline-transicao h3 {
     color: white;
-    font-size: 35px;
+    font-size: 40px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: .1rem;
     margin-bottom: -3.5rem;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        2px 2px 5px rgb(0, 0, 0);
 }
 
 /* MENU */
@@ -210,6 +245,12 @@ header {
     color: #e0a547;
 }
 
+.text-container a:hover {
+    margin-bottom: 3rem; 
+    color: #e0a547;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .flex-container {
         flex-direction: column; 
@@ -233,27 +274,27 @@ header {
 /* VISITE NOS */
 
 #visitenos {
-    background: url("images/confeitaria.webp") center no-repeat;
-    background-size: 100% auto;
+    position: relative;
     min-height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    overflow: hidden;
 }
 
-/* VISITE NOS */
-
-#visitenos {
+#visitenos::before {
+    content: "";
     background: url("images/confeitaria.webp") center no-repeat;
     background-size: 100% auto;
-    min-height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 
@@ -274,6 +315,10 @@ header {
 
 .localizacao a {
     color: black;
+}
+
+.localizacao a:hover {
+    color: #e0a547;
 }
 
 .horario p, .localizacao p, .contactos p {
@@ -337,5 +382,6 @@ header {
 
 .social-media a:hover {
     text-decoration: underline;
+    font-weight:bold;
 }
 
