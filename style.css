@@ -129,4 +129,48 @@ header {
     }
 }
 
+/* FRESCO */
 
+#fresco {
+    background: url("images/fresco.webp") center no-repeat;
+    background-size: 100% auto;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+
+#fresco h2 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    letter-spacing: .1rem;
+}
+
+#fresco h3 {
+    color: white;
+    font-size: 35px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-bottom: -3.5rem;
+}
+
+/* MENU */
+
+#image-group {
+    display: flex;
+    gap: 1rem;
+}
+
+#image-group img {
+    width: 200px; 
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 4px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
